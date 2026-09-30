@@ -1,0 +1,65 @@
+{
+  "Experiment_1_Data_Split": {
+    "Random_Split": {
+      "MAE": 265.95,
+      "RMSE": 452.85,
+      "R2": 0.9476
+    },
+    "Time_based_Split": {
+      "MAE": 242.58,
+      "RMSE": 424.63,
+      "R2": 0.954
+    },
+    "Conclusion": "Random Split đạt R2 cao ảo do các giờ liền kề bị rò rỉ qua lại giữa train và test. Time-based Split phản ánh đúng năng lực triển khai thực tế trên dữ liệu tương lai."
+  },
+  "Experiment_2_Model_Benchmark": {
+    "Calendar Baseline": {
+      "MAE": 260.77,
+      "RMSE": 448.08,
+      "R2": 0.9487
+    },
+    "Ridge Regression (L2)": {
+      "MAE": 636.59,
+      "RMSE": 874.48,
+      "R2": 0.8048
+    },
+    "Lasso Regression (L1)": {
+      "MAE": 637.99,
+      "RMSE": 875.26,
+      "R2": 0.8045
+    },
+    "Random Forest": {
+      "MAE": 251.64,
+      "RMSE": 448.68,
+      "R2": 0.9486
+    },
+    "XGBoost": {
+      "MAE": 242.58,
+      "RMSE": 424.63,
+      "R2": 0.954
+    }
+  },
+  "Experiment_3_Data_Drift": {
+    "MAE_by_Year": {
+      "2012": 269.39,
+      "2013": 253.17,
+      "2014": 234.46,
+      "2015": 241.35,
+      "2016": 254.82,
+      "2017": 248.09,
+      "2018": 247.31
+    },
+    "MAE_by_Season": {
+      "Autumn (Mùa thu)": 261.89,
+      "Spring (Mùa xuân)": 218.09,
+      "Summer (Mùa hè)": 233.88,
+      "Winter (Mùa đông)": 287.81
+    }
+  },
+  "Experiment_4_Error_Analysis": {
+    "Holiday_MAE": 114.33,
+    "Regular_Day_MAE": 242.68,
+    "Extreme_Weather_MAE": 282.27,
+    "Clear_Weather_MAE": 209.88
+  }
+}
